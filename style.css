@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 body{
   background: #000;
   height: 50vh;
@@ -42,4 +44,33 @@ body{
     scale(0.9);
     box-shadow: none;
   }
+}
+
+
+.text{
+  text-align: center;
+  font-family: Courier;
+  margin-top: 100px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+.text::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;  }
+
 }

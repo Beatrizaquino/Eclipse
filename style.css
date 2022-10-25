@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 body{
+  margin: 50px;
   background: #000;
   height: 50vh;
   display: grid;
   place-items: center;
 }
 
+
 .circle{
+  margin-top:50px;
   height:200px;
   width: 200px;
   border-radius: 50%;
@@ -52,15 +55,16 @@ body{
   font-family: Courier;
   margin-top: 100px;
   padding: 20px;
-  font-weight: 700;
+  font-weight:500;
   font-size: 20px;
   color: white;
 }
 
+
 .text::after {
   content: "|";
   margin-left: 5px;
-  animation: blink .7s infinite;
+  animation: blink .9s infinite;
 }
 
 @keyframes blink {
